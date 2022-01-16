@@ -54,8 +54,9 @@ String should not be concatenated with int, I always forget to transform the dat
 - asterisk 星号*
 - quotation marks 引号, double quotes 双引号
 - syntax highlight 句法高亮
-- back slash 反斜杠 forward slash 斜杠
+- back slash 反斜杠, (forward) slash 斜杠
 - `\n` 换行
+- \dot 句号 ., comma
 
 ## Recommend Tool
 - Thonny: good tool for python beginner, demonstrate how the computer run every step.
