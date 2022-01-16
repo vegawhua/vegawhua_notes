@@ -17,7 +17,7 @@
   - The server doesn't respond the complete web page, but respond with **instructions** with code that the browser could understand and display the page for me.
   - Front End & Back End
 - Understanding the roles of HTML, CSS, and JS ❗️Crucial  
-  Nice Explanation!
+  Nice Explanation!  
   <img width="708" alt="html css js" src="https://user-images.githubusercontent.com/97777280/149612665-7ae1a9d1-7931-40a8-a5d3-bfa50151a440.png">
   - HTML: The content of the page
   - CSS: Make it looks pretty, describes the structure
