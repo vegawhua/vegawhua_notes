@@ -7,7 +7,9 @@
 - `input()`
 - `len()`
 - `type()` - data type check
-- `round(formula, round num to x decimal places)` - e.g. `round(8 / 3, 2)` = 2.67
+- Format
+  - `round(formula, round num to x decimal places)` - e.g. `round(8 / 3, 2)` = 2.67
+  - `"{target format}".format(value)` - e.g. `sum = "{:.2f}".format(sum)`
 
 ## Data Variable
 - **Naming Rules** - made your code readable
@@ -56,7 +58,7 @@ String should not be concatenated with int, I always forget to transform the dat
 - syntax highlight 句法高亮
 - back slash 反斜杠, (forward) slash 斜杠
 - `\n` 换行
-- \dot 句号 ., comma
+- dot 句号, comma 逗号, colon 冒号
 
 ## Recommend Tool
 - Thonny: good tool for python beginner, demonstrate how the computer run every step.
