@@ -18,3 +18,9 @@
 | (forward)slash  | 斜杠  | `/` |
 | back slash*  | 反斜杠  | `\` |
 | angular brackets | 大于小于号 | `<` `>` |
+
+## Noun Definition
+| Name  | Chinese | Similar |
+| ------------- | ------------- | ------------- |
+| boilerplate | n.样板 | template |
+| convoluted | a.错综复杂的 | complicated |
