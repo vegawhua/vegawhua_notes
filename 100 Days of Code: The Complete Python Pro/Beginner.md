@@ -77,6 +77,7 @@ String should not be concatenated with int, I always forget to transform the dat
 | colon  | 冒号  | `:` |
 | asterisk  | 星号  | `*` |
 | equal sign  | 等号  | `=` |
+| apostrophe  | 撇号  | I'm |
 | quotation (marks)  | 单引号  | `'` |
 | double quotes | 双引号  | `"` |
 | (forward)slash  | 斜杠  | `/` |
