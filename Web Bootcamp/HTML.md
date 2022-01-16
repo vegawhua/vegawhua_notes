@@ -7,7 +7,26 @@
 | \<br> | Insert space between items | Self-closing | |
 | \<hr> | Add horizontal lines | Self-closing | \<hr size = "3" noshade> |
 | \<center>\</center> | | |
+| | | | |
+| Special | | | |
+| \<!-- xxx --> | Make comment | | |
 
+## HTML - Personal Site
+```html
+<!-- Emmet: quick coding - input 'html' and press enter -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+```
 
 
 ## Dict
