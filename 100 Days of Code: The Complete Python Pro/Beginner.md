@@ -8,8 +8,12 @@
 - `len()`
 - `type()` - data type check
 - Format
-  - `round(formula, round num to x decimal places)` - e.g. `round(8 / 3, 2)` = 2.67
-  - `"{target format}".format(value)` - e.g. `sum = "{:.2f}".format(sum)`
+  - Omit 0 - **round()**  
+    `round(formula, round num to x decimal places)` - e.g. `round(8 / 3, 2)` = 2.67
+  - Reserve 0 - **.format()**  
+    `"{target format}".format(value)` - e.g. `sum = "{:.2f}".format(sum)`
+  - .lower() / .upper() - e.g. ex3.5
+  - .count("a") - count the string elements - e.g. ex3.5
 
 ## Data Variable
 - **Naming Rules** - made your code readable
@@ -26,10 +30,14 @@
   `str(num)` OR `float(str)`
 - **Mathematical Operation**
   - **Arithmetic Operators** 算术  
-    `+` `-` `*` `/` `**` `//`  
+    `+` `-` `*` `/` `**` `//` `%`-取模
     floor division 整除 - e.g. `8 // 3` = 2
   - **Assignment Operators** 赋值  
     `=` `+=` `-=` `*=` `/=` `%=` `//=` `**=` `&=` `|=` `^=` `>>=` `<<=`
+  - **Comparison Operators** 比较
+    `>` `<` `>=` `<=` `==` `!=`
+  - **Logical Operators** 逻辑
+    `and` `or` `not`
   - Have a certain level of priority:  
     PEMDAS - Parenthese `()` | Exponents指数 `**` | Multiplication `*` Division `/` | Addition `+` Subtraction `-`
 - **Output format**
@@ -45,6 +53,11 @@
     your score is 0, your height is 1.8, you are winning is True.
     ```
 
+## Conditional Statement
+- if/else Statement
+  - elif
+  - nested if/else statement 嵌套
+  - multiple if/else 多重 - check multiple conditions
 
 
 
@@ -52,13 +65,30 @@
 String should not be concatenated with int, I always forget to transform the data type.
 
 ## Dict
-- parentheses(brackets) 括号 `()`, square brackets 方括号 `[]`, curly braces 大括号 `{}`
-- asterisk 星号*
-- quotation marks 引号, double quotes 双引号
-- syntax highlight 句法高亮
-- back slash 反斜杠, (forward) slash 斜杠
-- `\n` 换行
-- dot 句号, comma 逗号, colon 冒号
+- **Symbol**  
+
+| Name  | Chinese | Symbol |
+| ------------- | ------------- | ------------- |
+| parentheses / brackets | 括号  | `()` |
+| square brackets  | 方括号  | `[]` |
+| curly braces  | 大括号  | `{}` |
+| dot  | 句号  | `.` |
+| comma  | 逗号  | `,` |
+| colon  | 冒号  | `:` |
+| asterisk  | 星号  | `*` |
+| equal sign  | 等号  | `=` |
+| quotation (marks)  | 单引号  | `'` |
+| double quotes | 双引号  | `"` |
+| (forward)slash  | 斜杠  | `/` |
+| back slash*  | 反斜杠  | `\` |
+
+\* "escape" character, `\n` - new line, `\t` - tab, `\r` - enter
+- **Definition**
+  - modulo 模除
+  - remainder 余数
+  - syntax highlight 句法高亮
+  - indent 空格
+  - indentation level 缩进级别
 
 ## Recommend Tool
 - Thonny: good tool for python beginner, demonstrate how the computer run every step.
