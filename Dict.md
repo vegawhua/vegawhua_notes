@@ -26,3 +26,5 @@
 | convoluted | a.错综复杂的 | complicated |
 | cursor | n.光标 ||
 | vice versa | 反之亦然 | |
+| deprecated | a.已弃用的 | |
+| recap | n.回顾 | generalization,sum |
