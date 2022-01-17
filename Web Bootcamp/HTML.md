@@ -111,3 +111,8 @@ Attributes have been deprecated
 
 ## Recommend Tool
 - [devdocs](https://devdocs.io)
+- Hosting sites
+  - Paid
+    - [GoDaddy](https://www.godaddy.com/)
+    - [Bluehost](https://www.bluehost.com/)
+  - Free: [Github](https://github.com/)
