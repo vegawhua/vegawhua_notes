@@ -1,3 +1,12 @@
+# Content
+- [HTML Tag](#html-tag)
+  * [Table](#table)
+  * [HTML - Personal Site](#html---personal-site)
+- [Dict](#dict)
+- [Recommend Tool](#recommend-tool)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## HTML Tag  
 \<HTML element HTML attribute>  
   
@@ -20,7 +29,26 @@
 | Special | | | |
 | \<!-- xxx --> | Make comment | | |
 
-## HTML - Personal Site
+### Table
+Attributes have been deprecated  
+```html
+<table>
+  <thead>
+    <tr>      <!-- table row -->
+      <th>...</th>    <!-- table head data -->
+      <th>...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>...</td>    <!-- table data -->
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>      
+```
+
+### HTML - Personal Site
 ```html
 <!-- Emmet: quick coding - input 'html' and press enter -->
 
