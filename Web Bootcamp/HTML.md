@@ -5,8 +5,6 @@
 - [Dict](#dict)
 - [Recommend Tool](#recommend-tool)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ## HTML Tag  
 \<HTML element HTML attribute>  
   
