@@ -24,3 +24,5 @@
 | ------------- | ------------- | ------------- |
 | boilerplate | n.样板 | template |
 | convoluted | a.错综复杂的 | complicated |
+| cursor | n.光标 ||
+| vice versa | 反之亦然 | |
