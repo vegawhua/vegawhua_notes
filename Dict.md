@@ -28,3 +28,4 @@
 | vice versa | 反之亦然 | |
 | deprecated | a.已弃用的 | |
 | recap | n.回顾 | generalization,sum |
+| OCD | n.强迫症 | |
