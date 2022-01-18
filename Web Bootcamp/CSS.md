@@ -3,7 +3,7 @@
   * [Table](#table)
   * [Forms](#forms)
 - [Internal CSS](#internal-css)
-  * [Border-style syntax](#border-style-syntax)
+  * [border-style syntax](#border-style-syntax)
 - [External CSS](#external-css)
 
 CSS: Cascading Style Sheets 层叠样式表
@@ -35,7 +35,7 @@ A single location where when the CSS styles have been changed in that one locati
   </style>
 </head>
 ```
-### Border-style syntax
+### border-style syntax
 - The border-style property may be specified using **one**, **two**, **three**, or **four** values.
   - When **one** value is specified, it applies the same style to all four sides.
   - When **two** values are specified, the first style applies to the top and bottom, the second to the left and right.
