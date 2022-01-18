@@ -8,6 +8,7 @@
 | dot  | 句号  | `.` |
 | comma  | 逗号  | `,` |
 | colon  | 冒号  | `:` |
+| semicolon | 分号 | `;` |
 | exclamation mark | 感叹号 | `!` |
 | asterisk  | 星号  | `*` |
 | equal sign  | 等号  | `=` |
@@ -19,7 +20,7 @@
 | back slash*  | 反斜杠  | `\` |
 | angular brackets | 大于小于号 | `<` `>` |
 
-## Noun Definition
+## Definition
 | Name  | Chinese | Similar |
 | ------------- | ------------- | ------------- |
 | boilerplate | n.样板 | template |
@@ -29,3 +30,6 @@
 | deprecated | a.已弃用的 | |
 | recap | n.回顾 | generalization,sum |
 | OCD | n.强迫症 | |
+| plugin | n.插件 | |
+| bang on about sth. | 一直在讨论 | |
+| fully-fledged | a.成熟的 | matural |
