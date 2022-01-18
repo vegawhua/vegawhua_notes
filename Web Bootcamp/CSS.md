@@ -3,7 +3,7 @@
   * [Table](#table)
   * [Forms](#forms)
 - [Internal CSS](#internal-css)
-  * [Border-style syntax](#border--style-syntax)
+  * [Border-style syntax](#border-style-syntax)
 - [External CSS](#external-css)
 
 CSS: Cascading Style Sheets 层叠样式表
