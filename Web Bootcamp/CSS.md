@@ -17,9 +17,8 @@
 - [Fonts](#fonts)
 - [CSS Static and Relative Positioning](#css-static-and-relative-positioning)
 
-CSS: Cascading Style Sheets 层叠样式表
-
 # Introduction
+**CSS: Cascading Style Sheets 层叠样式表**
 ## Inline CSS
 内联: cannot implement to all tags in the webpage at once, need to be revised one by one
 ```html
@@ -132,6 +131,7 @@ Serif typeface - 字母下面有脚脚
 - **Slab-Serif** 
 
 ## CSS Static and Relative Positioning
- 
+1. Content is Everything
+2. Order Comes From Code
  
  
