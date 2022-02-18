@@ -108,7 +108,7 @@ CSS`display` Swift between Block and Inline
 - Block: Take a whole width of the screen on a web page by default. 可以调整高度宽度
   - Paragraphs `<p>`
   - Headers `<h1>` - `<h6>`
-  - Divisions` `<div>`
+  - Divisions `<div>`
   - Lists and list items `<ol>` `<ul>` `<li>`
   - Forms `<form>`
 - Inline - 可以同一行，但是高度宽度无法调整，是根据内容固定的
@@ -131,7 +131,27 @@ Serif typeface - 字母下面有脚脚
 - **Slab-Serif** 
 
 ## CSS Static and Relative Positioning
+Rules:  
 1. Content is Everything
 2. Order Comes From Code
- 
+3. Children Sit On Parents
+**Postion**  
+- Static(Default)
+- Relative
+ - 和margin不同的是，relative会保留其他element不变化（可能产生覆盖），margin会让其他element跟着一起动
+ ```
+ img {
+  position: relative;
+  right: 30px;
+ }
+ ```
+- Absolute: 是element相对于其parent div的位置，常指整个页面
+> absolute是绝对定位；而relative是相对定位； 解释： 绝对定位就是相对于父元素的定位，不受父元素内其他子元素的影响；而相对定位是相对于同级元素的定位，也就是上一个同级元素!
+- Fixd：导航栏就是这样的，翻页不动项
+
+**Coordinates**  
+- Top
+- Bottom
+- Left
+- Right
  
