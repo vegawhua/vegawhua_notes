@@ -1,4 +1,5 @@
 # Content
+## Introduction
 - [Inline CSS](#inline-css)
   * [Table](#table)
   * [Forms](#forms)
@@ -6,9 +7,10 @@
   * [border-style syntax](#border-style-syntax)
 - [External CSS](#external-css)
 - [Debug](#debug)
-
+## Intermediate
 CSS: Cascading Style Sheets 层叠样式表
 
+# Introduction
 ## Inline CSS
 内联: cannot implement to all tags in the webpage at once, need to be revised one by one
 ```html
@@ -67,8 +69,24 @@ Keep all of rules in alphabetical order
 Identify HTML elements
 - `id` is unique inside a single page. 
   - identify elements where there is only a single one of them on a particular page.
-- `class` can be the same.
+  - it's not suggested to be used in CSS styling.
+- `class` can be the same, and each element can have several classes.
   - group related elements that are all going to behave or have a similar style.
+### Pseudo class 伪类
+添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 可被用于在用户将鼠标悬停在按钮上时改变按钮的颜色。
+```
+img:hover {
+    background-color: white;
+}
+```
+
+# Intermediate
+## Favicons
+Favicon是favorites icon的缩写，亦被称为website icon、page icon或urlicon。Favicon是与某个网站或网页相关联的图标。网站设计者可以多种方式创建这种图标，而目前也有很多网页浏览器支持此功能。
+
+## HTML Divs
+
+
 
 
 
