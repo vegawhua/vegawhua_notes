@@ -85,7 +85,7 @@ img:hover {
 Favicon是favorites icon的缩写，亦被称为website icon、page icon或urlicon。Favicon是与某个网站或网页相关联的图标。网站设计者可以多种方式创建这种图标，而目前也有很多网页浏览器支持此功能。
 
 ## HTML Divs
-
+`div` - Special HTML element that allows to divide content up on the website so that we can structure each div separately.
 
 
 
