@@ -5,6 +5,7 @@
 - [Internal CSS](#internal-css)
   * [border-style syntax](#border-style-syntax)
 - [External CSS](#external-css)
+- [Debug](#debug)
 
 CSS: Cascading Style Sheets 层叠样式表
 
@@ -35,6 +36,7 @@ A single location where when the CSS styles have been changed in that one locati
   </style>
 </head>
 ```
+
 ### border-style syntax
 - The border-style property may be specified using **one**, **two**, **three**, or **four** values.
   - When **one** value is specified, it applies the same style to all four sides.
@@ -43,3 +45,30 @@ A single location where when the CSS styles have been changed in that one locati
   - When **four** values are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).
 
 ## External CSS
+make pages consistent
+`<link rel="stylessheet" href="css/style.css">`
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/97777280/154622209-911f7e08-cbf5-49f7-8322-ead21b6d5298.png">
+
+## Debug
+style priority:  
+1. inline CSS
+2. internal CSS
+3. external CSS
+
+## CSS Syntax
+`selector {property:value;}`
+Keep all of rules in alphabetical order
+
+## CSS Selectors
+`selector {property:value;}` - Tag Selectors  
+`class=""` - Class Selectors - differentiate all of different HTML elements, making specific styling
+
+## Classes vs. Ids
+Identify HTML elements
+- `id` is unique inside a single page. 
+  - identify elements where there is only a single one of them on a particular page.
+- `class` can be the same.
+  - group related elements that are all going to behave or have a similar style.
+
+
+
