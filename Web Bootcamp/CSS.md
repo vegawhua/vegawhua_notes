@@ -1,8 +1,6 @@
 # Content
 ## Introduction
 - [Inline CSS](#inline-css)
-  * [Table](#table)
-  * [Forms](#forms)
 - [Internal CSS](#internal-css)
   * [border-style syntax](#border-style-syntax)
 - [External CSS](#external-css)
@@ -10,7 +8,7 @@
 - [CSS Syntax](#css-syntax)
 - [CSS Selectors](#css-selectors)
 - [Classes vs. Ids](#classes-vs-ids)
-  * [Pseudo class 伪类](#pseudo-class---)
+  * [Pseudo class](#pseudo-class)
 ## Intermediate
 - [Favicons](#favicons)
 - [HTML Divs](#html-divs)
@@ -83,8 +81,8 @@ Identify HTML elements
   - it's not suggested to be used in CSS styling.
 - `class` can be the same, and each element can have several classes.
   - group related elements that are all going to behave or have a similar style.
-### Pseudo class 伪类
-添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 可被用于在用户将鼠标悬停在按钮上时改变按钮的颜色。
+### Pseudo class 
+伪类：添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 可被用于在用户将鼠标悬停在按钮上时改变按钮的颜色。
 ```
 img:hover {
     background-color: white;
