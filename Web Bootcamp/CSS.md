@@ -85,8 +85,44 @@ img:hover {
 Favicon是favorites icon的缩写，亦被称为website icon、page icon或urlicon。Favicon是与某个网站或网页相关联的图标。网站设计者可以多种方式创建这种图标，而目前也有很多网页浏览器支持此功能。
 
 ## HTML Divs
-`div` - Special HTML element that allows to divide content up on the website so that we can structure each div separately.
+`div` - A content division element that allows to divide content up on the website so that we can structure each div separately.
+- Don't do anything unless using CSS
 
+## Box Model
+- height & width: static value or percentage
+- border: `{border-width:0px;}` / `{border-width:0px 10px 20px 10px;}`
+- padding: `{padding：20px;}` - 内容离box边缘的距离
+- margin: `{margin:20px;}` - box离viewspot的距离
 
+## CSS Display Property
+CSS显示属性
+CSS`display` Swift between Block and Inline
+- Block: Take a whole width of the screen on a web page by default. 可以调整高度宽度
+  - Paragraphs `<p>`
+  - Headers `<h1>` - `<h6>`
+  - Divisions` `<div>`
+  - Lists and list items `<ol>` `<ul>` `<li>`
+  - Forms `<form>`
+- Inline - 可以同一行，但是高度宽度无法调整，是根据内容固定的
+  - Spans `span`: Select one part of the text. 
+  - Images `<img>`
+  - Anchors `<a>`
+- Inline-Block
+- None
+  - `{display:none}`:消失，不保留位置
+  - `{visiblity:hidden}`:消失，保留位置
 
+## Fonts
+Lesson 97  
+Readability & Legibility  
+Prefer 2 fonts in one design  
+Serif typeface - 字母下面有脚脚
+- Old Style
+- Transitional
+- Modern
+- **Slab-Serif** 
 
+## CSS Static and Relative Positioning
+ 
+ 
+ 
