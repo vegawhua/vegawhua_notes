@@ -1,23 +1,4 @@
-# Content
-## Introduction
-- [Inline CSS](#inline-css)
-- [Internal CSS](#internal-css)
-  * [border-style syntax](#border-style-syntax)
-- [External CSS](#external-css)
-- [Debug](#debug)
-- [CSS Syntax](#css-syntax)
-- [CSS Selectors](#css-selectors)
-- [Classes vs. Ids](#classes-vs-ids)
-  * [Pseudo class](#pseudo-class)
-## Intermediate
-- [Favicons](#favicons)
-- [HTML Divs](#html-divs)
-- [Box Model](#box-model)
-- [CSS Display Property](#css-display-property)
-- [Fonts](#fonts)
-- [CSS Static and Relative Positioning](#css-static-and-relative-positioning)
-
-# Introduction
+# Concept
 **CSS: Cascading Style Sheets 层叠样式表**
 ## Inline CSS
 内联: cannot implement to all tags in the webpage at once, need to be revised one by one
@@ -174,7 +155,34 @@ body {
 ```  
 Font Embedding: 如果希望所有设备都浏览到指定的字体 have the same viewing experience  
 
+-----2.19-----
+## CSS Sizing
+### font-size
+|单位|分类|特点|换算|
+|------|------|------|------|
+|em|Dynamic|1em代表一个大写M的size, **value在parent body的size上累加**| 1em |
+|px|Static|parent变它不变| 16px |
+|%|Dynamic|**value在parent body的size上累加**| 100% |
+|rem|Dynamic|CSS3，ignore all of the parent settings for the font size and set it to this relative to the root.忽略字体大小的所有父设置，并将其设置为此相对于根。| 1rem |
+> Tip: **Using `rem`** instead of `em` or `%`
 
+### color
+修改文本字体颜色
 
+### font-weight
+字体的粗细 - normal or bold  
+e.g. `{font-weight: normal;}`
 
+### line-height
+设置多行元素的空间量，如多行文本的间距
+e.g. `{line-height: 2;}`
+
+## CSS Float and Clear
+- float: use for **wrapping** not for **positioning** - 用position: relative / absolute或者margin / padding
+  - 指定一个元素应沿其容器的左侧或右侧放置，允许文本和内联元素环绕它。  
+  - value: none / left / right  
+- clear (anti-float)
+  - 指定一个元素是否必须移动(清除浮动后)到在它之前的浮动元素下面。  
+  - value: none / left / right / both
+>网页虽然差不多设置好了，但是它还不是responsive反应灵敏的 --> 引出Bootstrap -->让website适用于all screen sizes and all dimensions.
 
