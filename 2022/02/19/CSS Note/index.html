@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title> | Hexo</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 6.0.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Hexo</h1><a id="logo" href="/.">Hexo</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><div class="post-meta">2022-02-19</div><div class="post-content"><p>CSS Introduction &amp; Intermediate</p>
+<h1 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><ul>
+<li><a href="#inline-css">Inline CSS</a></li>
+<li><a href="#internal-css">Internal CSS</a><ul>
+<li><a href="#border-style-syntax">border-style syntax</a></li>
+</ul>
+</li>
+<li><a href="#external-css">External CSS</a></li>
+<li><a href="#debug">Debug</a></li>
+<li><a href="#css-syntax">CSS Syntax</a></li>
+<li><a href="#css-selectors">CSS Selectors</a></li>
+<li><a href="#classes-vs-ids">Classes vs. Ids</a><ul>
+<li><a href="#pseudo-class">Pseudo class</a><h2 id="Intermediate"><a href="#Intermediate" class="headerlink" title="Intermediate"></a>Intermediate</h2></li>
+</ul>
+</li>
+<li><a href="#favicons">Favicons</a></li>
+<li><a href="#html-divs">HTML Divs</a></li>
+<li><a href="#box-model">Box Model</a></li>
+<li><a href="#css-display-property">CSS Display Property</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#css-static-and-relative-positioning">CSS Static and Relative Positioning</a></li>
+</ul>
+<h1 id="Introduction-1"><a href="#Introduction-1" class="headerlink" title="Introduction"></a>Introduction</h1><p><strong>CSS: Cascading Style Sheets 层叠样式表</strong></p>
+<h2 id="Inline-CSS"><a href="#Inline-CSS" class="headerlink" title="Inline CSS"></a>Inline CSS</h2><p>内联: cannot implement to all tags in the webpage at once, need to be revised one by one</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">style</span>=<span class="string">&quot;background-color:cornsilk;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Internal-CSS"><a href="#Internal-CSS" class="headerlink" title="Internal CSS"></a>Internal CSS</h2><p>内部: cannot be consistent across the website, cannot carry over to all other web pages on the website.<br>Solution:<br>A single location where when the CSS styles have been changed in that one location, then everything gets reflected across our website in all of the pages.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>❤️Vega&#x27;s Personal Site<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">body</span>&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">background-color</span>:cornsilk;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">    hr&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">border-style</span>:none;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">border-top</span>:<span class="number">7px</span> dotted grey;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">width</span>:<span class="number">4%</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="border-style-syntax"><a href="#border-style-syntax" class="headerlink" title="border-style syntax"></a>border-style syntax</h3><ul>
+<li>The border-style property may be specified using <strong>one</strong>, <strong>two</strong>, <strong>three</strong>, or <strong>four</strong> values.<ul>
+<li>When <strong>one</strong> value is specified, it applies the same style to all four sides.</li>
+<li>When <strong>two</strong> values are specified, the first style applies to the top and bottom, the second to the left and right.</li>
+<li>When <strong>three</strong> values are specified, the first style applies to the top, the second to the left and right, the third to the bottom.</li>
+<li>When <strong>four</strong> values are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).</li>
+</ul>
+</li>
+</ul>
+<h2 id="External-CSS"><a href="#External-CSS" class="headerlink" title="External CSS"></a>External CSS</h2><p>make pages consistent<br><code>&lt;link rel=&quot;stylessheet&quot; href=&quot;css/style.css&quot;&gt;</code><br><img width="810" alt="image" src="https://user-images.githubusercontent.com/97777280/154622209-911f7e08-cbf5-49f7-8322-ead21b6d5298.png"></p>
+<h2 id="Debug"><a href="#Debug" class="headerlink" title="Debug"></a>Debug</h2><p>style priority:  </p>
+<ol>
+<li>inline CSS</li>
+<li>internal CSS</li>
+<li>external CSS</li>
+</ol>
+<h2 id="CSS-Syntax"><a href="#CSS-Syntax" class="headerlink" title="CSS Syntax"></a>CSS Syntax</h2><p><code>selector &#123;property:value;&#125;</code><br>Keep all of rules in alphabetical order</p>
+<h2 id="CSS-Selectors"><a href="#CSS-Selectors" class="headerlink" title="CSS Selectors"></a>CSS Selectors</h2><p><code>selector &#123;property:value;&#125;</code> - Tag Selectors<br><code>class=&quot;&quot;</code> - Class Selectors - differentiate all of different HTML elements, making specific styling</p>
+<h2 id="Classes-vs-Ids"><a href="#Classes-vs-Ids" class="headerlink" title="Classes vs. Ids"></a>Classes vs. Ids</h2><p>Identify HTML elements</p>
+<ul>
+<li><code>id</code> is unique inside a single page.<ul>
+<li>identify elements where there is only a single one of them on a particular page.</li>
+<li>it’s not suggested to be used in CSS styling.</li>
+</ul>
+</li>
+<li><code>class</code> can be the same, and each element can have several classes.<ul>
+<li>group related elements that are all going to behave or have a similar style.<h3 id="Pseudo-class"><a href="#Pseudo-class" class="headerlink" title="Pseudo class"></a>Pseudo class</h3>伪类：添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover 可被用于在用户将鼠标悬停在按钮上时改变按钮的颜色。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">img:hover &#123;</span><br><span class="line">    background-color: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h1 id="Intermediate-1"><a href="#Intermediate-1" class="headerlink" title="Intermediate"></a>Intermediate</h1><h2 id="Favicons"><a href="#Favicons" class="headerlink" title="Favicons"></a>Favicons</h2><p>Favicon是favorites icon的缩写，亦被称为website icon、page icon或urlicon。Favicon是与某个网站或网页相关联的图标。网站设计者可以多种方式创建这种图标，而目前也有很多网页浏览器支持此功能。</p>
+<h2 id="HTML-Divs"><a href="#HTML-Divs" class="headerlink" title="HTML Divs"></a>HTML Divs</h2><p><code>div</code> - A content division element that allows to divide content up on the website so that we can structure each div separately.</p>
+<ul>
+<li>Don’t do anything unless using CSS</li>
+</ul>
+<h2 id="Box-Model"><a href="#Box-Model" class="headerlink" title="Box Model"></a>Box Model</h2><ul>
+<li>height &amp; width: static value or percentage</li>
+<li>border: <code>&#123;border-width:0px;&#125;</code> &#x2F; <code>&#123;border-width:0px 10px 20px 10px;&#125;</code></li>
+<li>padding: <code>&#123;padding：20px;&#125;</code> - 内容离box边缘的距离</li>
+<li>margin: <code>&#123;margin:20px;&#125;</code> - box离viewspot的距离</li>
+</ul>
+<h2 id="CSS-Display-Property"><a href="#CSS-Display-Property" class="headerlink" title="CSS Display Property"></a>CSS Display Property</h2><p>CSS显示属性<br>CSS<code>display</code> Swift between Block and Inline</p>
+<ul>
+<li>Block: Take a whole width of the screen on a web page by default. 可以调整高度宽度<ul>
+<li>Paragraphs <code>&lt;p&gt;</code></li>
+<li>Headers <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></li>
+<li>Divisions <code>&lt;div&gt;</code></li>
+<li>Lists and list items <code>&lt;ol&gt;</code> <code>&lt;ul&gt;</code> <code>&lt;li&gt;</code></li>
+<li>Forms <code>&lt;form&gt;</code></li>
+</ul>
+</li>
+<li>Inline - 可以同一行，但是高度宽度无法调整，是根据内容固定的<ul>
+<li>Spans <code>span</code>: Select one part of the text.</li>
+<li>Images <code>&lt;img&gt;</code></li>
+<li>Anchors <code>&lt;a&gt;</code></li>
+</ul>
+</li>
+<li>Inline-Block</li>
+<li>None<ul>
+<li><code>&#123;display:none&#125;</code>:消失，不保留位置</li>
+<li><code>&#123;visiblity:hidden&#125;</code>:消失，保留位置</li>
+</ul>
+</li>
+</ul>
+<h2 id="Fonts"><a href="#Fonts" class="headerlink" title="Fonts"></a>Fonts</h2><p>Lesson 97<br>Readability &amp; Legibility<br>Prefer 2 fonts in one design<br>Serif typeface - 字母下面有脚脚</p>
+<ul>
+<li>Old Style</li>
+<li>Transitional</li>
+<li>Modern</li>
+<li><strong>Slab-Serif</strong><br>Sans-serif</li>
+</ul>
+<h2 id="CSS-Static-and-Relative-Positioning"><a href="#CSS-Static-and-Relative-Positioning" class="headerlink" title="CSS Static and Relative Positioning"></a>CSS Static and Relative Positioning</h2><p>Rules:  </p>
+<ol>
+<li>Content is Everything</li>
+<li>Order Comes From Code</li>
+<li>Children Sit On Parents</li>
+</ol>
+<p><strong>Postion</strong>  </p>
+<ul>
+<li>Static(Default)</li>
+<li>Relative</li>
+<li>和margin不同的是，relative会保留其他element不变化（可能产生覆盖），margin会让其他element跟着一起动 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">img &#123;</span><br><span class="line"> position: relative;</span><br><span class="line"> right: 30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>Absolute: 是element相对于其parent div的位置，常指整个页面<blockquote>
+<p>absolute是绝对定位；而relative是相对定位； 解释： 绝对定位就是相对于父元素的定位，不受父元素内其他子元素的影响；而相对定位是相对于同级元素的定位，也就是上一个同级元素!</p>
+</blockquote>
+</li>
+<li>Fixd：导航栏就是这样的，翻页不动项</li>
+</ul>
+<p><strong>Coordinates</strong>  </p>
+<ul>
+<li>Top</li>
+<li>Bottom</li>
+<li>Left</li>
+<li>Right</li>
+</ul>
+<h2 id="Center-the-elements"><a href="#Center-the-elements" class="headerlink" title="Center the elements"></a>Center the elements</h2><p><code>&#123;text-align: center&#125;</code> - be set inside the parent container.<br><code>&#123;margin: 0 auto 0 auto&#125;</code> - auto代表自动纵向横向的居中，用在有width限制的element上</p>
+<h2 id="Font-Styling"><a href="#Font-Styling" class="headerlink" title="Font Styling"></a>Font Styling</h2><p>内置字体：</p>
+<ol>
+<li>Serif - default: Times</li>
+<li>Sans-serif - default: Arial  <code>&#123;font-family: verdana, sans-serif;&#125;</code></li>
+<li>Monospace - 常用于展示代码，易读性强</li>
+</ol>
+<p>如果想确保未安装首选字体的设备可以正常浏览，可以由specific –&gt; less specific顺序依次指定展示的字体  </p>
+<pre><code>body &#123;
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif
+&#125;
+</code></pre>
+<p>Font Embedding: 如果希望所有设备都浏览到指定的字体 have the same viewing experience  </p>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2022/02/19/My-first-Blog/">My first Blog</a><a class="next" href="/2022/02/19/hello-world/">Hello World</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://example.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/02/19/My-first-Blog/">My first Blog</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/02/19/CSS%20Note/">CSS Note</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/02/19/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">Hexo.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
