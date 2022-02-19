@@ -2,3 +2,8 @@ deploy:
   type: git
   repository: https://github.com/vegawhua/vegawhua.github.io.git
   branch: master
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: tufu9441/maupassant-hexo
