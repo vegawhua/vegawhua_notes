@@ -1,0 +1,4 @@
+deploy:
+  type: git
+  repository: https://github.com/vegawhua/vegawhua.github.io.git
+  branch: master
