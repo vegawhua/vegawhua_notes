@@ -128,7 +128,8 @@ Serif typeface - 字母下面有脚脚
 - Old Style
 - Transitional
 - Modern
-- **Slab-Serif** 
+- **Slab-Serif**
+Sans-serif 
 
 ## CSS Static and Relative Positioning
 Rules:  
@@ -154,4 +155,26 @@ Rules:
 - Bottom
 - Left
 - Right
- 
+
+## Center the elements
+`{text-align: center}` - be set inside the parent container.
+`{margin: 0 auto 0 auto}` - auto代表自动纵向横向的居中，用在有width限制的element上
+
+## Font Styling
+内置字体：
+1. Serif - default: Times
+2. Sans-serif - default: Arial  `{font-family: verdana, sans-serif;}`
+3. Monospace - 常用于展示代码，易读性强  
+  
+如果想确保未安装首选字体的设备可以正常浏览，可以由specific --> less specific顺序依次指定展示的字体  
+```
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+```  
+Font Embedding: 如果希望所有设备都浏览到指定的字体 have the same viewing experience  
+
+
+
+
+
